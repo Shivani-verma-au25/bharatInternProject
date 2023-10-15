@@ -42,7 +42,7 @@ main{
 }
 .elem-container{
     width: 80%;
-    height: 45%;
+    height: 65%;
     /* background-color: palevioletred; */
     border-radius: 1vw;
     border: .1vw solid ;
@@ -110,4 +110,8 @@ form>h1{
     background-color: #cad1e7;
     border-radius: .3vw;
     font-weight: 500;
+}
+p{
+    font-size: 2vw ;
+    color: #fff;
 }
