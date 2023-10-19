@@ -78,6 +78,10 @@ nav{
     font-family: ntfx;
     font-weight: 700;
 }
+.nav-right>button:hover{
+    background-color: #da3941;
+    cursor: pointer;
+}
 
 /* ************* hero ************** */
 .hero{
@@ -93,14 +97,14 @@ nav{
     color: #fff;
 }
 .hero>h1{
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: ntfx;
 }
 .hero>p{
     font-size: 1.6vw;
     padding: 1vw 0;
-    font-family: ntfx;
-    font-weight: 100;
+    font-family: gilroy;
+    font-weight: 500;
 }
 .btn{
     width: 60%;
@@ -109,15 +113,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .2vw;
+    gap: 1.2vw;
 }
 .btn>input{
-    width: 50%;
+    width: 60%;
     padding: 1.3vw 1vw;
     background-color: #1f1e22c3;
     border: .1vw solid #dadada; 
     border-radius: .3vw;
-    
+    padding: 1.4vw 0.5vw;
 }
 .btn>button{
     padding: 1vw 2vw;
@@ -125,9 +129,13 @@ nav{
     color: #fff;
     border: none;
     border-radius: .3vw;
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-family: ntfx;
     font-weight: 900;
+}
+.btn>button:hover{
+    background-color:#da3941;
+    cursor: pointer;
 }
 ::placeholder{
     color: #fff;
@@ -375,7 +383,7 @@ nav{
 }
 .wrapper-p6{
     width: 80%;
-    /* height: 80%; */
+    /* height: 100%; */
      /* max-height: 100%;  */
 
     /* background-color: red; */
@@ -387,6 +395,7 @@ nav{
     gap: .2vw;
 }
 .elem{
+    height: 100%;
     background-color: rgb(43, 41, 41);
     gap: .2vw;
     position: relative;
@@ -401,8 +410,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right:  1vw;
-    /* padding: 2vw 0; */
+    padding: 1.4vw;
     margin-left: .4vw;
 }
 .top>p{
@@ -417,7 +425,6 @@ nav{
   overflow: hidden;
   transition:  all .3s ease;
   background-color: rgb(43, 41, 41);
-  padding: 1vw 0;
 
 }
 .elem:hover{
@@ -430,7 +437,7 @@ nav{
     font-family:gilroy;
     font-size: 1.6vw;
     font-weight: 400;
-    margin-top: 1vw ;
+    margin: 1vw .5vw;
     color: #726f6f;
 }
 .icon{
@@ -459,10 +466,64 @@ nav{
 #page7{
     width: 100vw;
     height: 60vh;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
+}
+.wrapper-p7{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper-p7>p,select,h3{
+    margin-left: 6vw;
+    color:#b0aeae ;
+}
+.wrapper-p7>p>span{
+    text-decoration: underline;  
+}
+.wrapper-p7>select{
+    font-size: 1.2vw;
+    padding: .3vw 2vw;
+    border-radius: .4vw;
+    background-color: transparent;
+    color: #fff;
+}
+.wrapper-p7>h3{
+    font-size: 1.2vw;
+    font-family: gilroy;
+    color: #fff;
+    margin-top: .5vw;
+    font-weight: 500;
+}
+.wrapper-p7>select>option{
+    color: #000000;
 }
 
-
+.inner-wrap{
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card{
+    margin: 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.1vw;
+    margin-left: 6vw;
+}
+.card>a{
+    display: block;
+    color: #b0aeae;
+    font-size: 1vw;
+    /* width: 30%; */
+    font-family: gilroy;
+}
 
 /* ************ media queries *************** */
 
@@ -496,6 +557,7 @@ nav{
     }
 }
 
+/* 950px */
 @media all and (max-width:950px) {
     #page1 {
         height: 80vh;
@@ -512,6 +574,7 @@ nav{
     }
     .btn>button{
         font-size: 2.6vw;
+        
     }
     .nav-right>select {
         font-size: 2vw;
@@ -609,6 +672,14 @@ nav{
     }
     .inner-p5 {
         height: 100%;
+    }.small-text {
+        font-size: 2.3vw;
+        width: 90%;
+        margin-left: 2vw;
+    }
+    .big-text {
+        margin: 0.6vw auto;
+        font-size: 6vw;
     }
     
     
@@ -616,9 +687,214 @@ nav{
 
 
 /* for mobile */
-@media all and (max-width:400px) {
-    main{
-        background-color: #c71018;
+@media all and (max-width:700px) {
+    .hero>h1 {
+        font-size: 5vw;
+    }
+    .nav-right>button {
+        font-size: 2.3vw;
+    }
+    .btn>input {
+        width: 60%;
+        padding: 2vw 1vw
+    }
+    ::placeholder{
+        font-size: 3vw;
+    }
+    .btn {
+        width: 81%;
+    }
+    .btn>button {
+            font-size: 3.3vw;
+            padding: 0.2vw 4vw;
+    }
+    .hero>p {
+        font-size: 2.8vw;
+        margin-bottom: 2vw;
+    }
+    .wrapper {
+        width: 100%;
     }
     
+    .page2>.big-text>
+    
+    .big-text {
+        font-size: 5vw;
+        margin: 2.3vw 0;
+        margin-left: 1vw;
+    }
+    #page3>.wrapper {
+        width: 100%;
+    }
+    #page6 {
+        /* width: 100vw;
+        height: 100vh; */
+    }
+    .wrapper-p6 {
+        width: 85%;
+        height: 61%;
+    }
+    .top{
+        
+        padding: 4.4vw;
+    }
+    .top>p {
+        font-size: 3.6vw;
+    }
+    .top>i {
+        font-size: 4vw;
+    }
+    .bottom>p {
+        font-family: gilroy;
+        font-size: 2.6vw;
+    }
+    .bt-txt>p {
+        font-size: 2.7vw;
+    }
+    .btn>input {
+        width: 61%;
+        padding: 3vw -1vw;
+    }
+    .btn>input {
+        width: 61%;
+        padding: 3vw 
+    }
+    .btn>button {
+        font-size: 3.3vw;
+        padding: 2.2vw 4vw
+    }
+    .inner-wrap {
+        gap: 5vw;
+    }
+    .card{
+        margin-left: 6vw;
+    }
+    .card>a {
+        font-size: 2vw;
+    } 
+    .wrapper-p7>select {
+        font-size: 2.2vw;
+    }  
+    .wrapper-p7>h3 {
+        font-size: 3.2vw;
+    }  
+   
+}
+
+/* 500px */
+@media all and (max-width:500px) {
+    .btn{
+        flex-direction: column;
+    }
+    .btn>input {
+        width: 100%;
+    }
+    .btn>button {
+        font-size: 6.3vw;
+        padding: 2.2vw 4vw;
+        margin-top: 4vw;
+    }
+    .hero>h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+    .hero>p {
+        font-size: 4vw;
+        text-align: center;
+    }
+    .nav-right>select {
+        font-size: 3vw;
+    }
+    .nav-right>button {
+        font-size: 3.4vw;
+        border-radius: .3vw;
+
+    }
+    ::placeholder{
+        font-size: 4vw;
+    }
+    .inner-img {
+        height: 60%;
+        width: 100%;
+    }
+    .big-text {
+        font-size: 8vw;
+        margin-left: 11vw;
+    }
+    .small-text {
+        font-size: 4vw;
+    }
+    .inner-image>img {
+        width: 95%;
+        height: 70%;
+    }
+    .inner-image>video {
+        width: 60%;
+        height: 40%;
+    }
+    .btn>button {
+        margin: 3vw 0;
+    }
+    .bt-txt>p {
+        font-size: 3.7vw;
+        margin: 7vw;
+        text-align: center;
+    }
+    .inner-wrap {
+        gap: -9vw;
+    }
+    .card>a {
+        font-size: 2.5vw;
+    }
+    .inner-wrap {
+        gap: 0vw;
+    }
+    .wrapper-p7>p, select, h3 {
+        margin: 4vw;
+    }
+    .wrapper-p7>select {
+        font-size: 3.2vw;
+    }
+    #page6>h1 {
+        margin: 6vw 0;
+        font-size: 6.4vw;
+    }
+    .top>p {
+        font-size: 4.6vw;
+    }
+    .top>i {
+        font-size: 6vw;
+    }
+    .bottom>p {
+        padding: 0 1vw;
+        font-size: 4vw;
+    }
+    .nav-right{
+        margin-right: 4vw;
+    }
+    .hero>p {
+        font-size: 4vw;
+        margin-right: 3.4vw;
+    }
+    .big-text {
+        font-size: 8vw;
+        margin-left: 15vw;
+    }
+    .small-text {
+        font-size: 3.5vw;
+    }
+    .heading{
+        text-align: center;
+        margin-left: 17vw;
+    }
+    #page3>.bg-txt{
+        margin-left: 8vw;
+    }
+    .big-text {
+        font-size: 8vw;
+        margin-left: -2vw;
+    }
+    .small-text {
+        margin-left: -1vw;
+    }
 }
