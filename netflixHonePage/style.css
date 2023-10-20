@@ -127,7 +127,7 @@ nav{
     padding: 1.4vw 0.5vw;
 }
 .btn>button{
-    padding: 1vw 2vw;
+    padding: .8vw 2vw;
     background-color: #c71018;
     color: #fff;
     border: none;
@@ -534,6 +534,9 @@ nav{
     .hero>h1{
         font-size: 4vw;
         font-family: ntfx;
+    }
+    .btn>button{
+        padding: 1vw 2vw;
     }
     .hero>p{
         font-family: gilroy;
